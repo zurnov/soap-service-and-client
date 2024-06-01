@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://zurnov.com">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gs:getCryptoRequest>
+            <gs:ticker>ETH</gs:ticker>
+        </gs:getCryptoRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

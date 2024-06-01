@@ -1,0 +1,27 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://zurnov.com"
+           targetNamespace="http://zurnov.com" elementFormDefault="qualified">
+
+    <xs:element name="getCryptoRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ticker" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getCryptoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="crypto" type="tns:crypto"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="crypto">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="ticker" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
